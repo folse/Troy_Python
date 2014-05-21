@@ -10,7 +10,7 @@ def reservation(resultArray):
 	for x in xrange(0,len(resultArray)):
 		car_num = resultArray[x]['CNBH']
 		reservation_params = car_num + '.' + reservation_date + '.' + want_type + '.'
-		reservation_request_data = urllib.urlencode({'xxzh':'51137361','jlcbh':'','isJcsdYyMode':'5','trainType':'','zip':'false','osname':'android','params':reservation_params})
+		reservation_request_data = urllib.urlencode({'xxzh':'YOUR_ID','jlcbh':'','isJcsdYyMode':'5','trainType':'','zip':'false','osname':'android','params':reservation_params})
 		print time.time()
 		print opener.open(reservation_request_url,reservation_request_data).read()
 
