@@ -16,7 +16,7 @@ def reservation(resultArray):
 
 def get_car():
 	car_request_url = 'http://haijia.bjxueche.net:8001/KM2/ClYyCars2'
-	car_request_data = urllib.urlencode({'filters[jlcbh]':'','filters[xxzh]':'51137362','filters[trainType]':'','zip':'false','osname':'android','filters[xnsd]':want_type,'filters[yyrq]':want_date}) 
+	car_request_data = urllib.urlencode({'filters[jlcbh]':'','filters[xxzh]':'YOUR_ID','filters[trainType]':'','zip':'false','osname':'android','filters[xnsd]':want_type,'filters[yyrq]':want_date}) 
 	running = True
 	try:
 		while running:
